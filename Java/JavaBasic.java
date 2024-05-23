@@ -1,5 +1,7 @@
 class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("I am learning DSA with JAVA"); 
+        int a = 100;
+        int b = 5;
+        System.out.println(a*b);
     }
 }
