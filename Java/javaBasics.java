@@ -14,5 +14,7 @@ import java.util.*;
 
       System.out.println("Sum is = "+ sum);
 
+      sc.close();
+
     }
 }
