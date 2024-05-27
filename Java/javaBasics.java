@@ -1,3 +1,5 @@
+// #type casting
+
 import java.util.*;
 
 public class javaBasics{
