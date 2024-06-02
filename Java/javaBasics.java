@@ -3,24 +3,24 @@ import java.util.*;
 public class javaBasics {
     public static void main (String args[]){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter Day : ");  
-        int day = sc.nextInt();
-        switch (day){
-            case 1: System.out.println("MONDAY");
+        System.out.print("Enter a : ");  
+        int a = sc.nextInt();
+        System.out.print("Enter b : ");  
+        int b = sc.nextInt();
+        System.out.print("Enter Operator : ");  
+        char operator = sc.next().charAt(0);
+        switch (operator){
+            case '+' : System.out.println(a+b);
             break;
-            case 2: System.out.println("TUESDAY");
+            case '-': System.out.println(a-b);
             break;
-            case 3: System.out.println("WEDNESDAY");
+            case '*': System.out.println(a*b);
             break;
-            case 4: System.out.println("THURSDAY");
+            case '/': System.out.println(a/b);
             break;
-            case 5: System.out.println("FRIDAY");
+            case '%': System.out.println(a%b);
             break;
-            case 6: System.out.println("SATURDAY");
-            break;
-            case 7: System.out.println("SUNDAY");
-            break;
-            default : System.out.println("NOT A DAY ENTER DAY (1-7)");
+            default : System.out.println("USE CORRENT OPERATOR (+,-,*,/,%");
         }
     }
 }
