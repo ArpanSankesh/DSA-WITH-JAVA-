@@ -1,4 +1,4 @@
-//Table for 10
+//Table for n number
 import java.util.*;
 
 public class javaBasics {
