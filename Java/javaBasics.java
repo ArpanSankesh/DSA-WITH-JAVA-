@@ -1,4 +1,4 @@
-// Square star pattern
+//  Reverse the Number
 import java.util.*;
 
 public class javaBasics {
@@ -6,12 +6,12 @@ public class javaBasics {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a Number : ");
         int n = sc.nextInt();
-
-        for (int i = 0; i <= n; i++){
-            for(int j = 0; j <= n; j++){
-                System.out.print(" * ");
-            }
-            System.out.println();
-        }  
+        int rev = 0;
+        while( n > 0 ){
+            int lastDigit = n % 10;
+            rev = (rev * 10) + lastDigit;
+            n = n / 10;
+        }
+        System.out.println(rev);
     }
-}
+}g
