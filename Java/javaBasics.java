@@ -6,24 +6,23 @@ public class javaBasics {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the Number : ");
-        int n = sc.nextInt();
+        // System.out.print("Enter the Number : ");
+        // int n = sc.nextInt();
+        int x = 3;
+switch (x) {
+    case 1:
+        System.out.println("One");
+        break;
+    case 2:
+        System.out.println("Two");
+        break;
+    case 3:
+        System.out.println("Three");
+        break;
+    default:
+        System.out.println("Default");
+}
 
-        if (n == 2) {
-            System.out.print(n + " is a Prime number");
-        } else {
-            boolean isPrime = true;
-            for (int i = 2; i <= Math.sqrt(n); i++) {
-                if (n % i == 0) {
-                    isPrime = false;
-                }
-            }
-            if (isPrime == true) {
-                System.out.print(n + " is a Prime Number");
-            } else {
-                System.out.print(n + " is not a Prime Number");
-            }
-        }
 
     }
 }
