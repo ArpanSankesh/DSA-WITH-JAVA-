@@ -1,5 +1,4 @@
-
-// BREAK STATEMENT
+// Keep entering numbers till user enter a multiple of 10
 import java.util.*;
 
 public class javaBasics {
