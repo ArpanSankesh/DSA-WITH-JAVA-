@@ -9,7 +9,7 @@ public class javaBasics {
            System.out.print("Enter the Number : ");
            int n = sc.nextInt();
            if (n%10 == 0){
-            System.out.println(n + " is a Multiple of 10");
+            System.out.println("Entered number is a Multiple of 10");
             continue;
            }
            System.out.println(n + " is not a Multiple of 10");
