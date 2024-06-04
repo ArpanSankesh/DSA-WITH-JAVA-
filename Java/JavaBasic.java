@@ -10,7 +10,7 @@ public class JavaBasic {
                 System.out.print(" ");
             }
             for( int k = 1; k <= i; k++){
-                System.out.print(k);
+                System.out.print("* ");
             }
             System.out.println();
         }
