@@ -6,17 +6,15 @@ public class JavaBasic {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a Number : ");
         int n = sc.nextInt();
-        int ans = fact(n);
-        System.out.println("Factorial of " + n + " is " + ans);
+        table(n);
     }
-
-    public static int fact(int n) {
-        int ans = 1;
-
-        for (int i = 1; i <= n; i++) {
-            ans = ans * i;
+    
+    public static void table(int n) {
+        // int ans = 1;
+        for (int i = 1; i <= 10; i++) {
+            int ans = n * i;
+            System.out.println( n + " X " + i + " = " + ans);
         }
-        return ans;
     }
 
 }
