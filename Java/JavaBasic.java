@@ -1,3 +1,4 @@
+
 // Calculate nCr using Function
 import java.util.*;
 
@@ -11,19 +12,18 @@ public class JavaBasic {
 
         int nfact = fact(n);
         int rfact = fact(r);
-        int nrfact = fact(n-r);
+        int nrfact = fact(n - r);
 
         int nCr = nfact / (rfact * nrfact);
 
-        System.out.println(nCr);
+        System.out.println("Valuse of nCr is :" + nCr);
 
-        
     }
-    
+
     public static int fact(int n) {
         int ans = 1;
         for (int i = 1; i <= n; i++) {
-             ans = ans * i;
+            ans = ans * i;
         }
         return ans;
     }
