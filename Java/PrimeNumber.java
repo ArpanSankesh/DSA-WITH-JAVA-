@@ -15,7 +15,7 @@ public class PrimeNumber {
         }
 
     }
-
+ 
     public static boolean isPrime(int n) {
 
         if (n <= 1) {

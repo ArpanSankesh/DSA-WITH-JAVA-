@@ -1,0 +1,27 @@
+import java.util.*;
+public class SumOfNturalNumbers {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a Number : ");
+        int n = sc.nextInt();
+        int Nsum = nautralSum(n);
+        int WSum = wholeSum(n);
+        System.out.println("Sum of " + n + " Nautral Number is : " + Nsum);
+        System.out.println("Sum of " + n + " Whole Number is : " + WSum);
+    }
+
+    public static int nautralSum(int n) {
+        int sum = 0;
+        for(int i = 1; i <= n; i++){
+            sum = sum + i;
+        }
+        return sum;
+    }
+    public static int wholeSum(int n) {
+        int sum = 0;
+        for(int i = 0; i < n; i++){
+            sum = sum + i;
+        }
+        return sum;
+    }
+}
