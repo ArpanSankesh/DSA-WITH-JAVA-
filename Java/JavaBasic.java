@@ -5,27 +5,17 @@ import java.util.*;
 public class JavaBasic {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter Value of n : ");
-        int n = sc.nextInt();
-        System.out.print("Enter Value of r : ");
-        int r = sc.nextInt();
-
-        int nfact = fact(n);
-        int rfact = fact(r);
-        int nrfact = fact(n - r);
-
-        int nCr = nfact / (rfact * nrfact);
-
-        System.out.println("Valuse of nCr is :" + nCr);
+        int n1 = cube(3);
+        System.out.println(add(n1,cube(2)));
 
     }
 
-    public static int fact(int n) {
-        int ans = 1;
-        for (int i = 1; i <= n; i++) {
-            ans = ans * i;
-        }
-        return ans;
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static int cube(int a) {
+        return a * a * a;
     }
 
 }
