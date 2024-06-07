@@ -8,6 +8,11 @@ public class SumOfNumbers {
         int WSum = wholeSum(n);
         System.out.println("Sum of " + n + " Nautral Number is : " + Nsum);
         System.out.println("Sum of " + n + " Whole Number is : " + WSum);
+
+        int calc = n* (n+1) / 2;
+        System.out.println(calc);
+        int calc2 = n* (n-1) / 2;
+        System.out.println(calc2);
     }
 
     public static int nautralSum(int n) {
