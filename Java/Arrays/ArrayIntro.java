@@ -1,9 +1,9 @@
 package Arrays;
-import java.util.*;
+import java.util.Arrays;
 
 public class ArrayIntro {
     public static void main(String[] args) {
-        int[] arr = new int[5]; // This array is not used in the current code
+        // int[] arr = new int[5]; 
         int[] arrr = {1, 2, 3, 4, 5};
 
         // Print the third element (index 2) of the arrr array
