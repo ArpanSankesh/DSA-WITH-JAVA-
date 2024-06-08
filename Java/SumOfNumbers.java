@@ -9,6 +9,7 @@ public class SumOfNumbers {
         int WSum = wholeSum(n);
         System.out.println("Sum of " + n + " Nautral Number is : " + Nsum);
         System.out.println("Sum of " + n + " Whole Number is : " + WSum);
+        sc.close();
 
     }
 
