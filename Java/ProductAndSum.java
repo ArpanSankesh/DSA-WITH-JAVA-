@@ -8,6 +8,7 @@ public class ProductAndSum {
 
         int sum = Sum(n);
         System.out.print(sum);
+        sc.close();
     }
 
     public static int Sum(int n){
