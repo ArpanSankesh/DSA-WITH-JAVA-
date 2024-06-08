@@ -6,6 +6,7 @@ public class SquareRoot {
         int n = sc.nextInt();
         int ans = Square(n);
         System.out.println("Square Root of " + n + " is " + ans);
+        sc.close();
     }
 
     public static int Square(int n){
