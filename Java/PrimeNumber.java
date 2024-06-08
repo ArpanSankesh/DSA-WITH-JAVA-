@@ -13,7 +13,7 @@ public class PrimeNumber {
             System.out.print(n + " : is not a Prime Number!");
 
         }
-
+        sc.close();
     }
  
     public static boolean isPrime(int n) {
