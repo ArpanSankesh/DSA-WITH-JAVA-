@@ -14,7 +14,12 @@ public class ArrayIntro {
             System.out.print("Enter value " + i + " : ");
             arr[i] = sc.nextInt();
         }
-        System.out.println(arr[2]);
+
+
+        System.out.print("Array : ");
+        for(int i = 0; i< arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
         sc.close();
     }
 }
