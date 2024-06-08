@@ -7,6 +7,7 @@ public class CountFactors {
         int n = sc.nextInt();
         int factor = factors(n);
         System.out.println("Factors of " + n + " is " + factor);
+        sc.close();
     }
 
     public static int factors(int n) {
