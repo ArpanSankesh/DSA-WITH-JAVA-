@@ -7,7 +7,7 @@ public class JavaBasic {
         Scanner sc = new Scanner(System.in);
         int n1 = cube(3);
         System.out.println(add(n1, cube(2)));
-
+        sc.close();
     }
 
     public static int add(int a, int b) {
