@@ -1,10 +1,9 @@
-// SUM OF ARRAY
 package Arrays;
 
-import java.util.*;
+import java.util.Scanner;
 
-public class SumOfArray {
-    public static void main(String[] args) {
+public class MaxOfArray {
+     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a Number : ");
         int n = sc.nextInt();
@@ -16,13 +15,14 @@ public class SumOfArray {
             arr[i] = sc.nextInt();
         }
 
-        int sum = 0;
+        int max = 0;
         for(int i = 0; i < arr.length; i++){         //sum of array
-            sum = sum + arr[i];
+            if(arr[i] > max){
+                max = arr[i];
+            }
         }
 
-        System.out.println("Sum of Array : " + sum);   //printing sum of array
+        System.out.println("Max of Array : " + max);   //printing sum of array
         sc.close();
     }
-    
-} 
+}
