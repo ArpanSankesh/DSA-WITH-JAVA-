@@ -18,14 +18,19 @@ public class checkAdditionOfIandJ {
         int k = sc.nextInt();
         boolean check = checkAdd(arr, k);
 
-        System.out.println(check);
+        
+        if(check){
+            System.out.println("YESS! There is a pair with the sum K");
+            }else{
+            System.out.println("NOOO! There is NO pair with the sum K");
+        }
 
         sc.close();
     }
 
     public static boolean checkAdd(int[] arr, int k){
         
-        for(int i = 1; i < arr.length -1; i++){
+        for(int i = 0; i < arr.length -1; i++){
             for(int j = i+1; j < arr.length; j++){
                 if(arr[i] + arr[j] == k){
                     return true;
