@@ -15,7 +15,7 @@ public class countGreater {
             arr[i] = sc.nextInt();
         }
         int count = count(arr);
-        System.out.println("Number of elements having greater element than itself :" + count);
+        System.out.println("Number of elements having greater element than itself : " + count);
         sc.close();
     }
 
