@@ -20,9 +20,9 @@ public class checkAdditionOfIandJ {
 
         
         if(check){
-            System.out.println("YESS! There is a pair with the sum K");
+            System.out.println("YESS! \nThere is a pair with the sum K");
             }else{
-            System.out.println("NOOO! There is NO pair with the sum K");
+            System.out.println("NOOO! \nThere is NO pair with the sum K");
         }
 
         sc.close();
