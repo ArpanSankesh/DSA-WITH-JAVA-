@@ -18,12 +18,12 @@ public class RotateArr {
 
         k = k % n;
 
-        System.out.println("Original Arr " + Arrays.toString(arr));
+        System.out.println("Original Arr : " + Arrays.toString(arr));
         reverse(arr, 0, n - 1);
         reverse(arr, 0, k - 1);
         reverse(arr, k, n - 1);
 
-        System.out.println("Arr after Reverse" + Arrays.toString(arr));
+        System.out.println("Arr after Reverse : " + Arrays.toString(arr));
 
         sc.close();
     }
