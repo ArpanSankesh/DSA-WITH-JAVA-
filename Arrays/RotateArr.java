@@ -16,6 +16,8 @@ public class RotateArr {
         System.out.print("Enter value of K : ");
         int k = sc.nextInt();
 
+        k = k % n;
+
         System.out.println("Original Arr " + Arrays.toString(arr));
         reverse(arr, 0, n - 1);
         reverse(arr, 0, k - 1);
