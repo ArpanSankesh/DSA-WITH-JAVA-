@@ -18,6 +18,8 @@ public class checkAdditionOfIandJ {
         int k = sc.nextInt();
         boolean check = checkAdd(arr, k);
 
+        System.out.println(check);
+
         sc.close();
     }
 
@@ -30,5 +32,6 @@ public class checkAdditionOfIandJ {
                 }
             }
         }
+        return false;
     }
 }
