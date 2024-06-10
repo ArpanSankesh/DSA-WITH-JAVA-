@@ -15,7 +15,7 @@ public class MaxOfArray {
             arr[i] = sc.nextInt();
         }
 
-        int max = arr[0];
+        int max = 0;
         for(int i = 0; i < arr.length; i++){         //sum of array
             if(arr[i] > max){
                 max = arr[i];
