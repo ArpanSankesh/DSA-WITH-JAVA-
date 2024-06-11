@@ -1,5 +1,5 @@
 // SUM OF ARRAY
-package Arrays;
+// package Arrays;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package Arrays;
+// package Arrays;
 
 public class swapArray {
     // "static void main" must be defined in a public class.
