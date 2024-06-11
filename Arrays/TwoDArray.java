@@ -12,7 +12,7 @@ public class TwoDArray {
 
         int[][] arr = new int[n][m];
 
-        
+        sc.close();
     }
     
 }
