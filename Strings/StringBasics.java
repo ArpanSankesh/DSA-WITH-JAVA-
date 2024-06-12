@@ -11,8 +11,16 @@ public class StringBasics {
         System.out.print("Enter a Character : ");
         char ch = sc.nextLine().charAt(0);
 
-        System.out.println(st);
-        System.out.println(ch);
+        System.out.println( "Your String : "+ st);
+        System.out.println( "Your Character : "+ ch);
+        
+
+
+        System.out.print("Enter a String to get the character : ");
+        String str = sc.nextLine();
+
+        System.out.println("Your Character at index 2 : " + str.charAt(2));
+
         sc.close();
     }
 
