@@ -15,16 +15,14 @@ public class ReverseString {
         System.out.print("Enter a String : ");
         String st = sc.nextLine();
 
-        for(int i = 0; i< n; i++){
+        for (int i = 0; i < n; i++) {
             ch[i] = st.charAt(i);
         }
         System.out.println("Original String : " + st.substring(0, n));
 
-        
         reverse(ch);
 
         System.out.println("Reversed String: " + new String(ch));
-
 
         sc.close();
     }
@@ -42,19 +40,19 @@ public class ReverseString {
     }
 
     // public static String reverse(String str){
-    //     int n = str.length();
+    // int n = str.length();
 
-    //     char[] ch = str.toCharArray();
-    //     int startPoint = 0;
-    //     int endPoint = n - 1;
-    //     while (startPoint < endPoint) {
-    //         char temp = ch[startPoint];
-    //         ch[endPoint] = ch[startPoint];
-    //         ch[startPoint] = temp;
-    //         startPoint++;
-    //         endPoint--;
-    //     }
-    //     String ans = str.valueOf(ch);
-    //     return ans;
+    // char[] ch = str.toCharArray();
+    // int startPoint = 0;
+    // int endPoint = n - 1;
+    // while (startPoint < endPoint) {
+    // char temp = ch[startPoint];
+    // ch[endPoint] = ch[startPoint];
+    // ch[startPoint] = temp;
+    // startPoint++;
+    // endPoint--;
+    // }
+    // String ans = str.valueOf(ch);
+    // return ans;
     // }
 }
