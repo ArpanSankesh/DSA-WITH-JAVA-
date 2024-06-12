@@ -18,12 +18,12 @@ public class TypeCasting {
         // System.out.println(n);
 
 
-        char ch = 'A';
-        if(ch >= 90){
-            System.out.println("greater");
-        }else{
-            System.out.println("Smaller");
-        }
+        // char ch = 'A';
+        // if(ch >= 90){
+        //     System.out.println("greater");
+        // }else{
+        //     System.out.println("Smaller");
+        // }
         
     }
 }
