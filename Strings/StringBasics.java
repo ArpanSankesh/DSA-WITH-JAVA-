@@ -8,8 +8,11 @@ public class StringBasics {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a String : ");
         String st = sc.nextLine();
+        System.out.print("Enter a Character : ");
+        char ch = sc.nextLine().charAt(0);
 
-        System.out.print(st);
+        System.out.println(st);
+        System.out.println(ch);
         sc.close();
     }
 
