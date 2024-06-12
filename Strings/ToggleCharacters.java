@@ -15,24 +15,23 @@ public class ToggleCharacters {
         System.out.print("Enter a String : ");
         String st = sc.nextLine();
 
-        for(int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             ch[i] = st.charAt(i);
         }
 
         System.out.println("Original String : " + st.substring(0, n));
         toggle(ch);
         System.out.println("String After Toggle : " + new String(ch));
-        
 
         sc.close();
 
     }
 
-    public static void toggle(char[] ch){
-        for(int i = 0; i < ch.length; i++){
-            if(ch[i]>= 65 && ch[i] <= 90){
+    public static void toggle(char[] ch) {
+        for (int i = 0; i < ch.length; i++) {
+            if (ch[i] >= 65 && ch[i] <= 90) {
                 ch[i] = (char) (ch[i] + 32);
-                }else{
+            } else {
                 ch[i] = (char) (ch[i] - 32);
             }
         }
