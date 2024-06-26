@@ -11,7 +11,7 @@ public class FindUniqueNUmber {
         int[] arr = new int[size];
         System.out.println("Enter the Elements of the Array : ");
         for (int i = 0; i < size; i++) {
-            System.out.print("Elements " + i + 1 + " : ");
+            System.out.print("Elements " + (i+1) + " : ");
             arr[i] = sc.nextInt();
         }
         int unique = Unique(arr, size);
