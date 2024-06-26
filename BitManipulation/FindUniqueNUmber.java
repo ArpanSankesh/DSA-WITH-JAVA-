@@ -8,12 +8,21 @@ public class FindUniqueNUmber {
         int size = sc.nextInt();
         
         int[] arr = new int[size];
-        System.out.print("Enter the Elements of the Array : ");
+        System.out.println("Enter the Elements of the Array : ");
         for(int i = 0; i < size; i++){
             arr[i] = sc.nextInt();
         }
-        
+        int unique = Unique(arr,size);
+        System.out.println("Unique NUmber is : " +unique);
         sc.close();
+    }
+
+    public static int Unique(int[] arr,int size){
+        int ans = 0;
+        for(int i = 0; i < size; i++){
+            ans = ans^arr[i];
+        }
+        return ans;
     }
 
 }
