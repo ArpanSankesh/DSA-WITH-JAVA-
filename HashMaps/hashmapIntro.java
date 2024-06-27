@@ -23,6 +23,7 @@ public class hashmapIntro {
         
         hm.remove(40);
         
+        System.out.println(hm.containsKey(40));
         System.out.println(hm.get(40));
        
     }
