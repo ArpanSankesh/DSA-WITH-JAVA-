@@ -12,9 +12,18 @@ public class hashmapIntro {
         hm.put(40,200);
 
 
-        hm.get(10);
-        hm.get(20);
-        hm.get(30);
-        hm.get(40);
+
+        System.out.println(hm.get(10));
+        System.out.println(hm.get(20));
+        System.out.println(hm.get(30));
+        System.out.println(hm.get(40));
+        
+        
+        System.out.println(hm.containsKey(40));
+        
+        hm.remove(40);
+        
+        System.out.println(hm.get(40));
+       
     }
 }
