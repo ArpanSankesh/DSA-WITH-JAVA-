@@ -22,27 +22,17 @@ public class findFrequency {
             } else {
                 hm.put(arr[i], 1);
             }
-            
+
         }
 
-        for( int i = 0; i < Q.length; i++ ){
+        for (int i = 0; i < Q.length; i++) {
             int val = Q[i];
-            if(hm.containsKey(val) == true){
+            if (hm.containsKey(val) == true) {
                 System.out.println(val + " contains " + hm.get(val) + " times!");
-            }else{
-                System.out.println(val + " contaise 0 time !" );
+            } else {
+                System.out.println(val + " contaise 0 time !");
             }
         }
 
-        // for(int i=0; i<Q.length; i++){
-        // int val = Q[i];
-        // int count = 0;
-        // for(int j=0; j<arr.length;j++){
-        // if (arr[j] == val) {
-        // count++;
-        // }
-        // }
-        // System.out.println(count);
-        // }
     }
 }
