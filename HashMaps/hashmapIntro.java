@@ -26,10 +26,9 @@ public class hashmapIntro {
         // System.out.println(hm.containsKey(40));
         // System.out.println(hm.get(40));
 
-        int[] arr = {10, 20 , 30 , 40 , 50 };
 
-        for( int val:arr){
-            System.out.println(val);
+        for( int val: hm.keySet()){
+            System.out.println(val + " , " + hm.get(val));
         }
 
        
