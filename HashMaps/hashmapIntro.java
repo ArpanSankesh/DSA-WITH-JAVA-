@@ -13,18 +13,25 @@ public class hashmapIntro {
 
 
 
-        System.out.println(hm.get(10));
-        System.out.println(hm.get(20));
-        System.out.println(hm.get(30));
-        System.out.println(hm.get(40));
+        // System.out.println(hm.get(10));
+        // System.out.println(hm.get(20));
+        // System.out.println(hm.get(30));
+        // System.out.println(hm.get(40));
         
         
-        System.out.println(hm.containsKey(40));
+        // System.out.println(hm.containsKey(40));
         
-        hm.remove(40);
+        // hm.remove(40);
         
-        System.out.println(hm.containsKey(40));
-        System.out.println(hm.get(40));
+        // System.out.println(hm.containsKey(40));
+        // System.out.println(hm.get(40));
+
+        int[] arr = {10, 20 , 30 , 40 , 50 };
+
+        for( int val:arr){
+            System.out.println(val);
+        }
+
        
     }
 }
