@@ -11,17 +11,17 @@ public class pairSum {
         System.out.println("Given array : " + Arrays.toString(arr));
         System.out.print("Enter the Value of K: ");
         int k = sc.nextInt();
-        boolean pairExists = pairSum(arr, k);
+        boolean pairExists = pairExists(arr, k);
         sc.close();
 
         if (pairExists) {
             System.out.println("There exists a pair with sum " + k);
         } else {
-            System.out.println("No pair with sum " + k + " found");
+            System.out.println("No pair with sum " + k + " is found");
         }
     }
 
-    public static boolean pairSum(int[] arr, int k) {
+    public static boolean pairExists(int[] arr, int k) {
         HashMap<Integer, Integer> hm = new HashMap<>();
 
         for (int i = 0; i < arr.length; i++) {
