@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class NonRepeatingElements {
     public static void main(String[] args) {
-        int[] arr = {1,2,1,2};
+        int[] arr = {5,4,4,3,6,7,5,6};
         int frequency = findFrequency(arr);
         System.out.println(frequency);
     }
