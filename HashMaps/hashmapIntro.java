@@ -26,6 +26,7 @@ public class hashmapIntro {
         // System.out.println(hm.containsKey(40));
         // System.out.println(hm.get(40));
 
+        System.out.println( hm.size());
 
         for( int val: hm.keySet()){
             System.out.println(val + " , " + hm.get(val));
