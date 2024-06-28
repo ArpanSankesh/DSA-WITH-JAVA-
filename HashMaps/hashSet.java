@@ -11,5 +11,7 @@ public class hashSet {
         hm.add(30);
         hm.add(40);
         hm.add(50);
+
+    System.out.println(hm.size());
     }
 }
