@@ -15,9 +15,9 @@ public class pairSum {
         sc.close();
 
         if (pairExists) {
-            System.out.println("There exists a pair with sum " + k);
+            System.out.println( " There exists a pair with sum " + k);
         } else {
-            System.out.println("No pair with sum " + k + " is found");
+            System.out.println(" No pair with sum " + k + " is found");
         }
     }
 
