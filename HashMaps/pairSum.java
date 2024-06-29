@@ -5,7 +5,7 @@ import java.util.*;
 public class pairSum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] arr = {8, 9, 1, -2, 4, 5, 11, -6, 7, 5};
+        int[] arr = { 8, 9, 1, -2, 4, 5, 11, -6, 7, 5 };
         System.out.println("Given array : " + Arrays.toString(arr));
         System.out.print("Enter the Value of K: ");
         int k = sc.nextInt();
@@ -13,7 +13,7 @@ public class pairSum {
         sc.close();
 
         if (pairExists) {
-            System.out.println( " There exists a pair with sum " + k);
+            System.out.println(" There exists a pair with sum " + k);
         } else {
             System.out.println(" No pair with sum " + k + " is found");
         }
