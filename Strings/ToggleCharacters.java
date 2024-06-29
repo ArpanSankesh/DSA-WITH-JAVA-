@@ -22,6 +22,8 @@ public class ToggleCharacters {
         System.out.println("Original String : " + st.substring(0, n));
         toggle(ch);
         System.out.println("String After Toggle : " + new String(ch));
+        toLowerCase(ch);
+        System.out.println("String After Toggle : " + new String(ch));
 
         sc.close();
 
@@ -35,5 +37,14 @@ public class ToggleCharacters {
                 ch[i] = (char) (ch[i] - 32);
             }
         }
+    }
+
+    public static String toLowerCase(char[] ch) {
+        for (int i = 0; i < ch.length; i++) {
+            if (ch[i] >= 'A' && ch[i] <= 'Z') {
+                ch[i] = (char) (ch[i] + 32);
+            }
+        }
+        return new String(ch);
     }
 }
