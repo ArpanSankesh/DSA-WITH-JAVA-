@@ -38,12 +38,12 @@ public class findFrequency {
 }
 
 // for(int i=0; i<Q.length; i++){
-        // int val = Q[i];
-        // int count = 0;
-        // for(int j=0; j<arr.length;j++){
-        // if (arr[j] == val) {
-        // count++;
-        // }
-        // }
-        // System.out.println(count);
-        // }
+// int val = Q[i];
+// int count = 0;
+// for(int j=0; j<arr.length;j++){
+// if (arr[j] == val) {
+// count++;
+// }
+// }
+// System.out.println(count);
+// }
