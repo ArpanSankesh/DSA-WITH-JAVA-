@@ -2,7 +2,7 @@ public class findSUm {
     public static void main(String[] args) {
         int n = 10;
         int sum = sum(n);
-        System.out.println(sum);
+        System.out.println("The Sum of " + n + " number is : " + sum);
     }
 
     public static int sum(int n) {
