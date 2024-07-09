@@ -1,8 +1,14 @@
+import java.util.Scanner;
+
 public class findSUm {
     public static void main(String[] args) {
-        int n = 10;
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter A Natural Number : ");
+        int n = sc.nextInt();
         int sum = sum(n);
         System.out.println("The Sum of " + n + " number is : " + sum);
+        sc.close();
     }
 
     public static int sum(int n) {
