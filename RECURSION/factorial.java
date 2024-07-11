@@ -6,16 +6,18 @@ public class findSUm {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter A Natural Number : ");
         int n = sc.nextInt();
-        int sum = sum(n);
+        int sum = fact(n);
         System.out.println("The Sum of " + n + " number is : " + sum);
         sc.close();
     }
 
-    public static int sum(int n) {
+    public static int fact(int n) {
         if (n == 1) {
             return 1;
         }
-        return n * sum(n-1);
+
+        int temp = fact(n-1);
+        return n * temp;
     }
         
 }
