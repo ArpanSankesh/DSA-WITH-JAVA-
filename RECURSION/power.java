@@ -18,6 +18,10 @@ public class power {
             return a;
         }
         int temp = pow(a, n / 2);
-        return temp * temp;
+        if( n%2 == 0){
+            return temp * temp;
+        }else{
+            return temp * temp * a;
+        }
     }
 }
