@@ -8,7 +8,6 @@ public class power {
         int a = sc.nextInt();
         System.out.print("Enter value of n : ");
         int n = sc.nextInt();
-
         int pow = pow(a, n);
         System.out.println("Power is : " + pow);
         sc.close();
