@@ -17,7 +17,7 @@ public class power {
         if (n == 1) {
             return a;
         }
-        int temp = pow(a, n - 1);
-        return temp * a;
+        int temp = pow(a, n / 2);
+        return temp * temp;
     }
 }
