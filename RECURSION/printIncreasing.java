@@ -6,8 +6,10 @@ public class printIncreasing {
         System.out.print("Enter a Number N : ");
         int n = sc.nextInt();
 
+        int answer = inc(n);
+        System.out.println("Your fibonaaci at " + n + "th : " + answer);
         sc.close();
     }
-
+    
     
 }
