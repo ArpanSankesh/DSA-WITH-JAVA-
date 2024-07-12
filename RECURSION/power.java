@@ -9,16 +9,16 @@ public class power {
         System.out.print("Enter value of n : ");
         int n = sc.nextInt();
 
-        int pow = pow(a,n);
+        int pow = pow(a, n);
         System.out.println("Power is : " + pow);
         sc.close();
     }
 
-    public static int pow(int a, int n){
-        if(n == 1){
+    public static int pow(int a, int n) {
+        if (n == 1) {
             return a;
         }
-        int temp = pow(a, n-1);
+        int temp = pow(a, n - 1);
         return temp * a;
     }
 }
