@@ -5,6 +5,7 @@ public class printIncreasing {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a Number N : ");
         int n = sc.nextInt();
+        System.out.println("Your Number is ");
         inc(n);
         sc.close();
     }
