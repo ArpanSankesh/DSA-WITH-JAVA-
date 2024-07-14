@@ -1,28 +1,37 @@
+import java.util.Scanner;
+
 public class palindrome {
     public static void main(String[] args) {
-        int[] arr = { 1,2,3,2,1 };
 
-        reverse(arr);
-        if (reverse(arr)) {
-            System.out.println("It is a palindrome!");
-        } else {
-            System.out.println("It is NOT a palindrome!");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Characters :");
+
+        String input = sc.nextLine();
+
+
+        char[] ch = input.toCharArray();
+
+        boolean ans = isPalindrome(ch, 0, ch.length-1);
+        if(ans){
+            System.out.println("'" + input +"' is an Palindrome ");
+        }else{
+            System.out.println("'" + input +"' is an not Palindrome ");
+
         }
+       
     }
 
-    public static boolean reverse(int[] arr) {
-
-        int startPoint = 0;
-        int endPoint = arr.length - 1;
-
-        while (startPoint < endPoint) {
-            if (arr[startPoint] != arr[endPoint]) {
-                return false;
-            }
-            startPoint++;
-            endPoint--;
+    public static boolean isPalindrome(char[] ch, int s , int e) {
+        if(s == e || s > e){
+            return true;
         }
-        return true;
 
+        if(ch[s] == ch[e]){
+            boolean temp = isPalindrome(ch, s+1, e-1);
+            return temp;
+        }
+        else{
+            return false;
+        }
     }
 }
