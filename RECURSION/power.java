@@ -8,16 +8,16 @@ public class power {
         int a = sc.nextInt();
         System.out.print("Enter value of n : ");
         int n = sc.nextInt();
-        int pow = pow(a, n);
+        long pow = pow(a, n);
         System.out.println("Power is : " + pow);
         sc.close();
     }
 
-    public static int pow(int a, int n) {
+    public static long pow(long a, long n) {
         if (n == 1) {
             return a;
         }
-        int temp = pow(a, n / 2);
+        long temp = pow(a, n / 2);
         if( n%2 == 0){
             return temp * temp;
         }else{
