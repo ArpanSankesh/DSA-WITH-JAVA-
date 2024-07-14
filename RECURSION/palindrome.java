@@ -11,14 +11,15 @@ public class palindrome {
         char[] ch = input.toCharArray();
 
         boolean ans = isPalindrome(ch, 0, ch.length - 1);
+
         if (ans) {
             System.out.println("'" + input + "' is an Palindrome ");
         } else {
             System.out.println("'" + input + "' is an not Palindrome ");
 
         }
-        sc.close();
 
+        sc.close();
     }
 
     public static boolean isPalindrome(char[] ch, int s, int e) {
