@@ -1,5 +1,6 @@
 package Sorting;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class goodInteger {
@@ -22,14 +23,14 @@ public class goodInteger {
    }
 
    public static int gInt(int[] arr){
+    Arrays.sort(arr);
     int count = 0;
-    int sum = 0;
+    // int sum = 0;
 
     for (int i = 0; i < arr.length; i++) {
-        if (arr[i] > sum) {
+        if(arr[i] == i){
             count++;
         }
-        sum += arr[i];
     }
 
     return count;
