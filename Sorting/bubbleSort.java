@@ -19,7 +19,6 @@ public class bubbleSort {
 
         bSort(arr);
         sc.close();
-
     }
 
     public static void bSort(int[] arr){
