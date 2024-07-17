@@ -13,11 +13,11 @@ public class goodInteger {
         int[] arr = new int[n];
 
         for (int i = 0; i < arr.length; i++) {
-            System.out.print("Enter Element  " + i + " : ");
+            System.out.print("Enter Element  " + (i+1) + " : ");
             arr[i] = sc.nextInt();
         }
         int gInt = gInt(arr);
-        System.out.println(gInt);
+        System.out.println( "There are " + gInt + " Good Integers");
 
         sc.close();
     }
