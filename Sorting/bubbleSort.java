@@ -11,7 +11,7 @@ public class bubbleSort {
         int[] arr = new int[n];
 
         for(int i = 0; i < n; i++ ){
-            System.out.print("Enter element " + i + " : " );
+            System.out.print("Enter element " + (i + 1) + " : " );
             arr[i] = sc.nextInt();
         }
         System.out.println("Original Array");
