@@ -25,12 +25,15 @@ public class goodInteger {
     public static int gInt(int[] arr) {
         Arrays.sort(arr);
         int count = 0;
-        // int sum = 0;
+        int lessCount = 0;
 
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == i) {
-                count++;
+            if (arr[i] != arr[i-1]) {
+                lessCount = i;
             }
+            if(arr[i] == lessCount){
+                count++;
+            } 
         }
 
         return count;
