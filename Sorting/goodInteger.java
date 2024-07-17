@@ -28,7 +28,7 @@ public class goodInteger {
         int lessCount = 0;
 
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] != arr[i-1]) {
+            if ( i == 0 || arr[i] != arr[i-1]) {
                 lessCount = i;
             }
             if(arr[i] == lessCount){
