@@ -19,7 +19,12 @@ public class findK {
         int k = sc.nextInt();
 
         boolean ans = search(arr,k);
-        System.out.println(ans);
+        if(ans){
+            System.out.println( k + " is Present in Array ");
+        }else{
+            System.out.println( k + " is NOT Present in Array ");
+            
+        }
 
         sc.close();
     }
