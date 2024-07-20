@@ -1,4 +1,5 @@
 package BinarySearch;
+
 import java.util.*;
 
 public class findFoor {
@@ -44,9 +45,3 @@ public class findFoor {
         return ans;
     }
 }
-
-
-
-  
-
-
