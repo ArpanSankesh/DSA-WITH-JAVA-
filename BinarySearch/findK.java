@@ -18,33 +18,32 @@ public class findK {
         System.out.print("Enter value of K : ");
         int k = sc.nextInt();
 
-        boolean ans = search(arr,k);
-        if(ans){
-            System.out.println( k + " is Present in Array ");
-        }else{
-            System.out.println( k + " is NOT Present in Array ");
-            
+        boolean ans = search(arr, k);
+        if (ans) {
+            System.out.println(k + " is Present in Array ");
+        } else {
+            System.out.println(k + " is NOT Present in Array ");
         }
 
         sc.close();
     }
 
-    public static boolean search(int[] arr, int k){
+    public static boolean search(int[] arr, int k) {
         int low = 0;
         int high = arr.length - 1;
 
-        while(low <= high){
-            int mid = (low + high)/2;
+        while (low <= high) {
+            int mid = (low + high) / 2;
 
             if (arr[mid] == k) {
                 return true;
-            }else if (arr[mid] < k) {
+            } else if (arr[mid] < k) {
                 low = mid + 1;
-            }else {
+            } else {
                 high = mid - 1;
             }
         }
         return false;
     }
-    
+
 }
