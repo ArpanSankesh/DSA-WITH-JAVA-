@@ -38,7 +38,6 @@ public class findFoor {
                 low = mid + 1;
                 ans = arr[mid];
             } else {
-
                 high = mid - 1;
             }
         }
