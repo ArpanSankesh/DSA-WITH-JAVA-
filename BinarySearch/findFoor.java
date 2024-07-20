@@ -35,8 +35,8 @@ public class findFoor {
             if (arr[mid] == k) {
                 return k;
             } else if (arr[mid] < k) {
-                low = mid + 1;
                 ans = arr[mid];
+                low = mid + 1;
             } else {
                 high = mid - 1;
             }
