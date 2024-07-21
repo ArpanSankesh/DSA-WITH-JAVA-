@@ -5,10 +5,12 @@ public class classAndObjectIntro {
         Pair p1 = new Pair();
         System.out.println(p1.x);
         System.out.println(p1.y);
-
+        
         p1.x = 10;
         p1.x = 20;
         System.out.println(p1.x + p1.y);
+
+        Pair p2 = new Pair();
     }
 
     public static class Pair{
