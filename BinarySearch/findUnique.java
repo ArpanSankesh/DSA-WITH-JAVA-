@@ -15,9 +15,7 @@ public class findUnique{
             System.out.print("Enter Element " + (i + 1) + " : ");
             arr[i] = sc.nextInt();
         }
-
         
-
         int ans = unique(arr);
         System.out.println("Unique Number in Array " + Arrays.toString(arr) + " is " + ans);
 
