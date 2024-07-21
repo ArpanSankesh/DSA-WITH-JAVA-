@@ -32,7 +32,7 @@ public class findUnique {
         int high = arr.length - 3;
 
         while (low <= high) {
-            int mid = (low - high) / 2;
+            int mid = low + (high - low) / 2;
 
             if (arr[mid] != arr[mid - 1] && arr[mid] != arr[mid + 1]) {
                 return arr[mid];
