@@ -23,6 +23,12 @@ public class findUnique {
     }
 
     public static int unique(int arr[]) {
+        if (arr[0] != arr[1]) {
+            return arr[0];
+        }
+        if (arr[arr.length - 1] != arr[arr.length - 2]) {
+            return arr[arr.length - 1];
+        }
         int low = 2;
         int high = arr.length - 3;
 
