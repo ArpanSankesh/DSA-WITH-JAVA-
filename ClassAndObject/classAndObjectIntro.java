@@ -12,13 +12,10 @@ public class classAndObjectIntro {
 
         Node n1 = new Node(20);
 
-
         Node n2 = new Node(30);
 
         n1.next = n2;
         System.out.println(n1.next.val);
-
-
 
     }
 
@@ -32,11 +29,11 @@ public class classAndObjectIntro {
         }
     }
 
-    public static class Node{
+    public static class Node {
         int val;
-        Node next ;
+        Node next;
 
-        Node(int v1){
+        Node(int v1) {
             val = v1;
         }
     }
