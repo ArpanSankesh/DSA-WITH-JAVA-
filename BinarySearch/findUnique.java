@@ -17,7 +17,7 @@ public class findUnique {
         }
 
         int ans = unique(arr);
-        System.out.println("Unique Number in Array " + Arrays.toString(arr) + " is " + ans);
+        System.out.println("Unique Number in Array is " + ans);
 
         sc.close();
     }
