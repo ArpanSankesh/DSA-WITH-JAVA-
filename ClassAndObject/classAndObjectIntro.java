@@ -9,8 +9,8 @@ public class classAndObjectIntro {
         
         Pair p2 = new Pair();
         p2.x = 10;
-        p2.x = 20;
-        System.out.println(p2.x + p2.y);
+        p2.y = 20;
+        System.out.println(p2.x *  p2.y);
 
     }
 
