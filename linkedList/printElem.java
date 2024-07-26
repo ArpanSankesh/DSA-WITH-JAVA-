@@ -24,11 +24,10 @@ public class printElem {
         
     }
 
-    public static Node insert(Node head,int k){
+    public static void insert(Node head,int k){
         Node n1 = new Node(k);
         n1.next = head;
         head = n1;
-        return head;
     }
 
     public static void print(Node head){
