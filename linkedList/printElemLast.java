@@ -6,11 +6,9 @@ import java.util.Scanner;
 public class printElemLast {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Node head = new Node(10);
-        // head.next = new Node(20);
-        // head.next.next = new Node(30);
-        // head.next.next.next = new Node(40);
-        // head.next.next.next.next = new Node(50);
+        System.out.println("Enter the Head value");
+        int headValue = sc.nextInt;
+        Node head = new Node(headValue);
 
         System.out.print("Enter the Value of N : ");
         int n = sc.nextInt();
