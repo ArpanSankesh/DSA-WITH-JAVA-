@@ -42,6 +42,11 @@ public class insertAtINDEX {
         Node n1 = new Node(v);
         Node temp = head;
 
+        if (k == 0) {
+            n1.next = temp;
+            temp = n1;
+        }
+
         for(int i = 1; i <= k-1; i++){
             temp = temp.next;
         }
