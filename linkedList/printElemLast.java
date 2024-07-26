@@ -28,7 +28,7 @@ public class printElemLast {
         Node n1 = new Node(k);
         Node temp = head;
 
-        while (temp != null) {
+        while (temp.next != null) {
             temp = temp.next;
         }
         temp.next = n1;
