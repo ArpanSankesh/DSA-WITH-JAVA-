@@ -6,22 +6,20 @@ public class insertAtINDEX {
      public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the Value of N : ");
-        int n = sc.nextInt();
+        
         
         System.out.print("Enter the Value of K : ");
         int k = sc.nextInt();
 
-        System.out.print("Enter the Head value : ");
-        int headValue = sc.nextInt();
+        
+        Node head = new Node(10);
+        head.next = new Node(20);
+        head.next.next = new Node(30);
+        head.next.next.next = new Node(40);
+        head.next.next.next.next = new Node(50);
 
-        Node head = new Node(headValue);
-
-        for (int i = 2; i <= n; i++) {
-            System.out.print("Element " + i + " : ");
-            int v = sc.nextInt();
-            insert(head,v,k);
-        }
+        
+        insert(head,60,k);
 
         print(head);
 
