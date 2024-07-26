@@ -10,7 +10,7 @@ public class printElemLast {
         System.out.print("Enter the Value of N : ");
         int n = sc.nextInt();
 
-        System.out.print("Enter the Head value");
+        System.out.print("Enter the Head value : ");
         int headValue = sc.nextInt();
 
         Node head = new Node(headValue);
