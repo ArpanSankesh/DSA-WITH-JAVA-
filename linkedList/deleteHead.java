@@ -22,8 +22,8 @@ public class deleteHead {
     }
 
     public static void delete(Node head){
+        head = head.next;
         Node temp = head;
-        // head = head.next;
 
         while (temp.next != null ) {
             
