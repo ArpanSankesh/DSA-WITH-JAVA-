@@ -6,13 +6,16 @@ import java.util.Scanner;
 public class printElemLast {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Head value");
-        int headValue = sc.nextInt;
-        Node head = new Node(headValue);
 
         System.out.print("Enter the Value of N : ");
         int n = sc.nextInt();
-        for (int i = 1; i <= n; i++) {
+
+        System.out.println("Enter the Head value");
+        int headValue = sc.nextInt();
+
+        Node head = new Node(headValue);
+
+        for (int i = 2; i <= n; i++) {
             System.out.print("Element " + i + " : ");
             int v = sc.nextInt();
             insert(head, v);
@@ -50,7 +53,7 @@ public class printElemLast {
         Node temp = head;
 
         while (temp != null) {
-            System.out.println(temp.val);
+            System.out.print(temp.val + " ");
             temp = temp.next;
         }
     }
