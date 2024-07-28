@@ -32,9 +32,9 @@ public class deleteAtLast {
 
     }
 
-    public static void print(Node head){
+    public static void print(Node head) {
         Node temp = head;
-        while (temp.next != null ) {
+        while (temp.next != null) {
             System.out.print(temp.val + " ");
             temp = temp.next;
         }
