@@ -26,7 +26,7 @@ public class reverse {
     public static void reversing(Node head) {
         Node curr = head;
         Node prev = null;
-        while (curr.next != null) {
+        while (curr != null) {
             Node curr1 = curr.next;
             curr.next = prev;
             prev = curr;
