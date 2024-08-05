@@ -23,7 +23,7 @@ public class reverse {
         }
     }
 
-    public static void reversing(Node head) {
+    public static Node reversing(Node head) {
         Node curr = head;
         Node prev = null;
         while (curr != null) {
@@ -32,7 +32,7 @@ public class reverse {
             prev = curr;
             curr = curr1;
         }
-        head = prev;
+        return prev;
     }
 
     public static void print(Node head) {
