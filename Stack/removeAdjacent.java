@@ -1,7 +1,23 @@
 package Stack;
 
+import java.util.Scanner;
+import java.util.Stack;
+
 public class removeAdjacent {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Stack <Integer> st = new Stack<>();
+
+        for (int i = 1; i <= 10; i++) {
+            st.add(i);
+        }
+        System.out.println( "Orignal Stack : " + st);
         
+        for (int i = 0; i < 3; i++) {
+            st.pop();
+        }
+        System.out.println( "Stack after Popping : " + st);
+        
+
     }
 }
