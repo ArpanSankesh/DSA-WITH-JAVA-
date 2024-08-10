@@ -7,7 +7,7 @@ public class removeAdjacent {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print(" String : ");
+        System.out.print("String : ");
 
         String st = sc.nextLine();
 
