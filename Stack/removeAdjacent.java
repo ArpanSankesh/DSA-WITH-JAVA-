@@ -27,7 +27,7 @@ public class removeAdjacent {
                 st.push(s.charAt(i));
             }
 
-            if (st.peek() == s.charAt(i)) {
+            else if (st.peek() == s.charAt(i)) {
                 st.pop();
             } else {
                 st.push(s.charAt(i));
