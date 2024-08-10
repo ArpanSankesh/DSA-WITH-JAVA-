@@ -6,22 +6,39 @@ import java.util.Stack;
 public class removeAdjacent {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the Number of elements : ");
-        int n = sc.nextInt();
-        System.out.print("Enter the Number of elements to remove : ");
-        int r = sc.nextInt();
-        Stack <Integer> st = new Stack<>();
 
-        for (int i = 1; i <= n; i++) {
-            st.add(i);
-        }
-        System.out.println( "Orignal Stack : " + st);
-        
-        for (int i = 0; i < r; i++) {
-            st.pop();
-        }
-        System.out.println( "Stack after Popping : " + st);
+        System.out.print(" String : ");
+
+        String st = sc.nextLine();
+
+         System.out.println("Orignal String : " + st);
+
+        String st2 = removeAdj(st);
+        System.out.println("After Removing Adjacent : " +st2);
+
+
         sc.close();
 
+    }
+
+    public static String removeAdj(String s){
+        Stack <Character> st = new Stack<>();
+        for (int i = 0; i < s.length(); i++) {
+            if(st.size() == 0 ){
+                st.push(s.charAt(i));
+            }
+
+            if (st.peek() == s.charAt(i)){
+                st.pop();
+            }
+            else{
+                st.push(s.charAt(i));
+            }
+        }
+        char[] arr = new char[st.size()];
+        for (int i = arr.length -1 ; i >= 0; i--) {
+            arr[i] = st.pop();
+        }
+        return new String(arr);
     }
 }
