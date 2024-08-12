@@ -10,32 +10,40 @@ public class validParanthesis {
         System.out.print("Enter the string of Parenthesis '( )' '{ }' ''[ ] : ");
         String s = sc.nextLine();
 
-        System.out.print("Your String : " + s);
+        System.out.println("Your String : " + s);
 
-        checkValidParenthesis(s);
+        Boolean result = checkValidParenthesis(s);
+
+        if (result) {
+            System.out.print("Yess! it is a Valid PArenthesis");
+        }else{
+            System.out.print("NO! it is NOT Valid PArenthesis");
+        }
         sc.close(); 
     }
+    
     public static Boolean checkValidParenthesis(String s){
         Stack <Character> st = new Stack<>();
-
+        
         for (int i = 0; i < s.length(); i++) {
+            char current = s.charAt(i);
             if(st.size() == 0 ){
-                st.push(s[i]);
+                st.push(current);
                 continue;
             }
-            if(s[i] == '(' || s[i] == '{' || s[i] == '['){
-                st.push(s[i]);
+            if(current == '(' || current == '{' || current == '['){
+                st.push(current);
 
             }else{
-                if (s[i] == ')' ) {
-                 if (st.peek() = ')') {
-                    st.pop()
+                if (current == ')' ) {
+                 if (st.peek() == '(') {
+                    st.pop();
                  }else{
                     return false;
                  }
                 }
 
-                if (s[i] == '}') {
+                if (current == '}') {
                     if (st.peek() == '{') {
                         st.pop();
                     }else{
@@ -43,7 +51,7 @@ public class validParanthesis {
                     }
                 }
 
-                if (s[i] == ']') {
+                if (current == ']') {
                     if (st.peek() == '[') {
                         st.pop();
                     }else{
@@ -52,12 +60,12 @@ public class validParanthesis {
                 }
                 
             }
-            if (st.size() == 0) {
-                return true;
-            }else{
-                return false;
-            }
-
+            
+        }
+        if (st.size() == 0) {
+            return true;
+        }else{
+            return false;
         }
     }
 }
