@@ -6,7 +6,7 @@ import java.util.Stack;
 public class validParanthesis {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+
         System.out.print("Enter the string of Parenthesis '( )' '{ }' ''[ ] : ");
         String s = sc.nextLine();
 
@@ -16,37 +16,37 @@ public class validParanthesis {
 
         if (result) {
             System.out.print("Yess! it is a Valid PArenthesis");
-        }else{
+        } else {
             System.out.print("NO! it is NOT Valid PArenthesis");
         }
-        sc.close(); 
+        sc.close();
     }
-    
-    public static Boolean checkValidParenthesis(String s){
-        Stack <Character> st = new Stack<>();
-        
+
+    public static Boolean checkValidParenthesis(String s) {
+        Stack<Character> st = new Stack<>();
+
         for (int i = 0; i < s.length(); i++) {
             char current = s.charAt(i);
-            if(st.size() == 0 ){
+            if (st.size() == 0) {
                 st.push(current);
                 continue;
             }
-            if(current == '(' || current == '{' || current == '['){
+            if (current == '(' || current == '{' || current == '[') {
                 st.push(current);
 
-            }else{
-                if (current == ')' ) {
-                 if (st.peek() == '(') {
-                    st.pop();
-                 }else{
-                    return false;
-                 }
+            } else {
+                if (current == ')') {
+                    if (st.peek() == '(') {
+                        st.pop();
+                    } else {
+                        return false;
+                    }
                 }
 
                 if (current == '}') {
                     if (st.peek() == '{') {
                         st.pop();
-                    }else{
+                    } else {
                         return false;
                     }
                 }
@@ -54,17 +54,17 @@ public class validParanthesis {
                 if (current == ']') {
                     if (st.peek() == '[') {
                         st.pop();
-                    }else{
+                    } else {
                         return false;
                     }
                 }
-                
+
             }
-            
+
         }
         if (st.size() == 0) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
