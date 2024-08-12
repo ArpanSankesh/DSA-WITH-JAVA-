@@ -26,7 +26,9 @@ public class validParanthesis {
         Stack<Character> st = new Stack<>();
 
         for (int i = 0; i < s.length(); i++) {
+
             char current = s.charAt(i);
+
             if (st.size() == 0) {
                 st.push(current);
                 continue;
@@ -60,7 +62,6 @@ public class validParanthesis {
                 }
 
             }
-
         }
         if (st.size() == 0) {
             return true;
