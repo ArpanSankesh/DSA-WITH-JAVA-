@@ -19,6 +19,7 @@ public class validParanthesis {
         } else {
             System.out.print("NO! it is NOT Valid PArenthesis");
         }
+        
         sc.close();
     }
 
