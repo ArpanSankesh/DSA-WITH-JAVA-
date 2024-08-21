@@ -1,4 +1,5 @@
 package Queue;
+
 import java.util.*;
 
 public class kThNumber {
@@ -15,6 +16,7 @@ public class kThNumber {
     }
 
     public static String kthNumber(int k) {
+
         Queue<String> q = new LinkedList<>();
 
         q.add("1");
