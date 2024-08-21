@@ -1,5 +1,5 @@
-package Queue;
 
+package Queue;
 import java.util.*;
 
 public class kThNumber {
@@ -10,7 +10,7 @@ public class kThNumber {
         int k = sc.nextInt();
 
         String result = kthNumber(k);
-        System.out.print(result);
+        System.out.print("Value of K is  " + result);
         sc.close();
 
     }
