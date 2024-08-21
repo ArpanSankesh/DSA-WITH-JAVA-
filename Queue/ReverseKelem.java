@@ -21,10 +21,9 @@ public class ReverseKelem {
         }
 
         System.out.println(qu);
-
-      
-      Queue<Integer> result = reverse(qu, k);;
-      System.out.println(result); 
+        
+        Queue<Integer> result = reverse(qu, k);;
+        System.out.println(result); 
 
         sc.close();
     }
