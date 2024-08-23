@@ -1,4 +1,6 @@
+
 public class sumOfTrees {
+
     public static void main(String[] args) {
 
         Node n1 = new Node(14);
@@ -16,10 +18,10 @@ public class sumOfTrees {
         n4.left = n5;
 
         n3.left = n6;
-        
+
         System.out.println("Root Note is " + n1.val);
-        
-        int sum = sum(n1); 
+
+        int sum = sum(n1);
         System.out.println("Sum of the tree: " + sum);
     }
 
@@ -34,7 +36,7 @@ public class sumOfTrees {
         }
     }
 
-    public static int sum(Node root){
+    public static int sum(Node root) {
         if (root == null) {
             return 0;
         }
