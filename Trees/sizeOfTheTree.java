@@ -19,8 +19,8 @@ public class sizeOfTheTree {
 
         n3.left = n6;
         
+        System.out.println("Root Note is " + n1.val);
         
-
         int size = size(n1); 
         System.out.println("Size of the tree: " + size);
     }
