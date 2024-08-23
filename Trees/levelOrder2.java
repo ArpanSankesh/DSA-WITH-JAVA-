@@ -46,16 +46,23 @@ public class levelOrder2 {
        q.add(root);
 
        while (!q.isEmpty()) {
-        Node temp = q.remove();
-        System.out.println(temp.val);
-
-        if (temp.left != null) {
-            q.add(temp.left);
-        }
-
-        if (temp.right != null) {
-            q.add(temp.right);
-        }
+        int n = q.size();
+        while (n > 0) {
+            Node temp = q.remove();
+            System.out.print(temp.val + " ");
+    
+            if (temp.left != null) {
+                q.add(temp.left);
+            }
+    
+            if (temp.right != null) {
+                q.add(temp.right);
+            }
+            n--;
+           }
+           System.out.println();
        }
+
+       
     }
 }
