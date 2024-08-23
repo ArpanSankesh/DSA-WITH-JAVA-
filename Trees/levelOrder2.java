@@ -3,6 +3,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class levelOrder2 {
+
     public static void main(String[] args) {
 
         Node n1 = new Node(14);
@@ -24,7 +25,6 @@ public class levelOrder2 {
         n3.right = n6;
 
         // System.out.println("Root Note is " + n1.val);
-
         order(n1);
 
     }
@@ -41,28 +41,27 @@ public class levelOrder2 {
     }
 
     public static void order(Node root) {
-    Queue<Node> q = new LinkedList<>();
+        Queue<Node> q = new LinkedList<>();
 
-       q.add(root);
+        q.add(root);
 
-       while (!q.isEmpty()) {
-        int n = q.size();
-        while (n > 0) {
-            Node temp = q.remove();
-            System.out.print(temp.val + " ");
-    
-            if (temp.left != null) {
-                q.add(temp.left);
+        while (!q.isEmpty()) {
+            int n = q.size();
+            while (n > 0) {
+                Node temp = q.remove();
+                System.out.print(temp.val + " ");
+
+                if (temp.left != null) {
+                    q.add(temp.left);
+                }
+
+                if (temp.right != null) {
+                    q.add(temp.right);
+                }
+                n--;
             }
-    
-            if (temp.right != null) {
-                q.add(temp.right);
-            }
-            n--;
-           }
-           System.out.println();
-       }
+            System.out.println();
+        }
 
-       
     }
 }
