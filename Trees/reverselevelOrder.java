@@ -26,7 +26,6 @@ public class reverselevelOrder {
         n3.left = n5;
         n3.right = n6;
 
-        // System.out.println("Root Note is " + n1.val);
         order(n1);
 
     }
