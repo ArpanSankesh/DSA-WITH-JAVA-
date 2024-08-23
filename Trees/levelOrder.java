@@ -2,8 +2,6 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-import javax.management.Query;
-
 public class levelOrder {
     public static void main(String[] args) {
 
@@ -45,7 +43,7 @@ public class levelOrder {
 
        q.add(root);
 
-       while (q.size > 0) {
+       while (!q.isEmpty()) {
         Node temp = q.remove();
         System.out.println(temp.val);
 
