@@ -1,10 +1,12 @@
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
 public class reverselevelOrder {
-        public static void main(String[] args) {
+
+    public static void main(String[] args) {
 
         Node n1 = new Node(14);
         Node n2 = new Node(18);
@@ -44,13 +46,11 @@ public class reverselevelOrder {
         Queue<Node> q = new LinkedList<>();
         List<Integer> ls = new ArrayList<>();
 
-
         q.add(root);
 
         while (!q.isEmpty()) {
             int n = q.size();
 
-    
             for (int i = 0; i < n; i++) {
                 Node temp = q.remove();
                 ls.add(temp.val);
@@ -64,7 +64,7 @@ public class reverselevelOrder {
                 }
 
             }
-            
+
         }
         for (int i = ls.size() - 1; i >= 0; i--) {
             System.out.print(ls.get(i) + " ");
