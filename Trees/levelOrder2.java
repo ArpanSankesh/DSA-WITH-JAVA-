@@ -47,7 +47,21 @@ public class levelOrder2 {
 
         while (!q.isEmpty()) {
             int n = q.size();
-            while (n > 0) {
+            // while (n > 0) {
+            //     Node temp = q.remove();
+            //     System.out.print(temp.val + " ");
+
+            //     if (temp.left != null) {
+            //         q.add(temp.left);
+            //     }
+
+            //     if (temp.right != null) {
+            //         q.add(temp.right);
+            //     }
+            //     n--;
+            // }
+
+            for (int i = 0; i < n; i++) {
                 Node temp = q.remove();
                 System.out.print(temp.val + " ");
 
@@ -58,7 +72,6 @@ public class levelOrder2 {
                 if (temp.right != null) {
                     q.add(temp.right);
                 }
-                n--;
             }
             System.out.println();
         }
