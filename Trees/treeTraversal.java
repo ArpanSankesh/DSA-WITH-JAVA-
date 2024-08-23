@@ -45,7 +45,7 @@ public  class treeTraversal{
             return;
         }
         traversal(root.left);
-        System.out.println(root.val);
         traversal(root.right);
+        System.out.println(root.val);
     }
 }
