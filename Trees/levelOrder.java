@@ -9,19 +9,21 @@ public class levelOrder {
         Node n2 = new Node(18);
         Node n3 = new Node(19);
         Node n4 = new Node(3);
-        Node n5 = new Node(10);
-        Node n6 = new Node(4);
+        Node n5 = new Node(4);
+        Node n6 = new Node(140);
+        Node n7 = new Node(10);
 
         n1.left = n2;
         n1.right = n3;
 
         n2.right = n4;
 
-        n4.left = n5;
+        n4.left = n7;
 
-        n3.left = n6;
+        n3.left = n5;
+        n3.right = n6;
 
-        System.out.println("Root Note is " + n1.val);
+        // System.out.println("Root Note is " + n1.val);
 
         order(n1);
 
