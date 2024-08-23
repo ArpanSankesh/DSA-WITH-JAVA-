@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "reverselevelOrder",
+            "request": "launch",
+            "mainClass": "reverselevelOrder",
+            "projectName": "DSA_77514479"
+        },
+        {
+            "type": "java",
             "name": "levelOrder2",
             "request": "launch",
             "mainClass": "levelOrder2",
