@@ -23,7 +23,6 @@ public class kLargeElem {
         System.out.println(Arrays.toString(arr));
 
         kSmallElement(arr, k);
-
         sc.close();
     }
 
