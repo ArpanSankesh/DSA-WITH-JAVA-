@@ -3,6 +3,7 @@ package Heaps;
 import java.util.*;
 
 public class kSmallElem {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -15,7 +16,7 @@ public class kSmallElem {
         int[] arr = new int[n];
 
         for (int i = 0; i < n; i++) {
-            System.out.print("Enter value " + (i+1) + " : " );
+            System.out.print("Enter value " + (i + 1) + " : ");
             arr[i] = sc.nextInt();
         }
 
@@ -26,16 +27,15 @@ public class kSmallElem {
         sc.close();
     }
 
-    public static void kSmallElement(int[] arr, int k){
+    public static void kSmallElement(int[] arr, int k) {
         PriorityQueue<Integer> PQ = new PriorityQueue<>(Collections.reverseOrder());
-
 
         for (int i = 0; i < k; i++) {
             PQ.add(arr[i]);
         }
 
         for (int i = k; i < arr.length; i++) {
-            if(arr[i] < PQ.peek()){
+            if (arr[i] < PQ.peek()) {
                 PQ.remove();
                 PQ.add(arr[i]);
             }
