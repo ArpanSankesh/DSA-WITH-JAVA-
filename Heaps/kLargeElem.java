@@ -35,7 +35,7 @@ public class kLargeElem {
         }
 
         for (int i = k; i < arr.length; i++) {
-            if (arr[i] < PQ.peek()) {
+            if (arr[i] > PQ.peek()) {
                 PQ.remove();
                 PQ.add(arr[i]);
             }
