@@ -3,8 +3,10 @@ package Heaps;
 import java.util.*;
 
 public class medianFinder {
-    PriorityQueue<Integer> left = new PriorityQueue<>(Collections.reverseOrder());
-    PriorityQueue<Integer> right = new PriorityQueue<>();
+
+    PriorityQueue<Integer> min = new PriorityQueue<>(Collections.reverseOrder());
+    PriorityQueue<Integer> max = new PriorityQueue<>();
+
     public static void main(String[] args) {
         medianFinder mf = new medianFinder();
         Scanner sc = new Scanner(System.in);
@@ -17,7 +19,7 @@ public class medianFinder {
         for (int i = 0; i < n; i++) {
             System.out.print("Enter value " + (i + 1) + " : ");
             arr[i] = sc.nextInt();
-            mf.addNum(arr[i]);  
+            mf.addNum(arr[i]);
             System.out.println("Current median: " + mf.findMedian());
         }
 
@@ -26,24 +28,22 @@ public class medianFinder {
         sc.close();
     }
 
-    public void addNum(int nums){
-        if (left.size() == right.size()) {
-            right.add(nums);
-            left.add(right.remove());
-        }else{
-            left.add(nums);
-            right.add(left.remove());
+    public void addNum(int nums) {
+        if (min.size() == max.size()) {
+            max.add(nums);
+            min.add(max.remove());
+        } else {
+            min.add(nums);
+            max.add(min.remove());
         }
     }
 
-    public double findMedian(){
-        if (left.size() == right.size()) {
-            double ans = left.peek() + right.peek() / 2.0;
-            return ans;
-        }else{
-            return left.peek() * 1.0;
+    public double findMedian() {
+        if (min.size() == max.size()) {
+            return (min.peek() + max.peek()) / 2.0;
+            
+        } else {
+            return min.peek() * 1.0;
         }
     }
-
-
 }
