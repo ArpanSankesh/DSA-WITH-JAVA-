@@ -14,7 +14,7 @@ public class dpIntro {
         Arrays.fill(dp, -1);
 
        int result = fib(n, dp);
-       System.out.println(result);
+       System.out.println("Fibonacci number at position " + n + " is: " + result);
     }
     public static int fib(int n, int[] dp){
         
