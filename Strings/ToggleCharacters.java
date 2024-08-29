@@ -23,7 +23,6 @@ public class ToggleCharacters {
         toggle(ch);
         System.out.println("String After Toggle : " + new String(ch));
         toLowerCase(ch);
-        System.out.println("String After Toggle : " + new String(ch));
 
         sc.close();
 
