@@ -6,11 +6,11 @@ public class TypeCasting {
         // System.out.println(ch2);
         
 
-        // int n = 'A';
-        // n = n + 2;
-        // char convert = (char) n;
-        // System.out.println(convert);
-        // System.out.println(n);
+        int n = 'A';
+        n = n + 2;
+        char convert = (char) n;
+        System.out.println(convert);
+        System.out.println(n);
 
         // int n = 'A';
         // n = (char) (n + 2);
