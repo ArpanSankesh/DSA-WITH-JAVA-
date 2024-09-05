@@ -15,9 +15,9 @@ public class validParanthesis {
         Boolean result = isValid(s);
 
         if (result) {
-            System.out.print("Yess! it is a Valid PArenthesis");
+            System.out.print("Yess! it is a Valid Parenthesis");
         } else {
-            System.out.print("NO! it is NOT Valid PArenthesis");
+            System.out.print("NO! it is NOT Valid Parenthesis");
         }
         
         sc.close();
