@@ -12,7 +12,7 @@ public class validParanthesis {
 
         System.out.println("Your String : " + s);
 
-        Boolean result = checkValidParenthesis(s);
+        Boolean result = isValid(s);
 
         if (result) {
             System.out.print("Yess! it is a Valid PArenthesis");
@@ -23,51 +23,35 @@ public class validParanthesis {
         sc.close();
     }
 
-    public static Boolean checkValidParenthesis(String s) {
-        Stack<Character> st = new Stack<>();
-
-        for (int i = 0; i < s.length(); i++) {
-
-            char current = s.charAt(i);
-
+    
+        public static boolean isValid(String s) {
+            Stack<Character> st = new Stack<>();
+    
+            for (int i = 0; i < s.length(); i++) {
+                char curr = s.charAt(i);
+                if (st.size() == 0) {
+                    st.push(curr);
+                    continue;
+                }
+                if (curr == '(' || curr == '{' || curr == '[') {
+                    st.push(curr);
+                } else {
+                    char top = st.peek(); 
+                    if (curr == ')' && top == '(' ||
+                        curr == '}' && top == '{' ||
+                        curr == ']' && top == '[' ){
+                            st.pop();
+                        }else{
+                            return false;
+                        }
+                }
+            }
             if (st.size() == 0) {
-                st.push(current);
-                continue;
-            }
-            if (current == '(' || current == '{' || current == '[') {
-                st.push(current);
-
+                return true;
             } else {
-                if (current == ')') {
-                    if (st.peek() == '(') {
-                        st.pop();
-                    } else {
-                        return false;
-                    }
-                }
-
-                if (current == '}') {
-                    if (st.peek() == '{') {
-                        st.pop();
-                    } else {
-                        return false;
-                    }
-                }
-
-                if (current == ']') {
-                    if (st.peek() == '[') {
-                        st.pop();
-                    } else {
-                        return false;
-                    }
-                }
-
+                return false;
             }
+    
         }
-        if (st.size() == 0) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    
 }
